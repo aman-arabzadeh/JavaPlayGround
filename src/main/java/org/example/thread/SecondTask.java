@@ -1,10 +1,10 @@
-package org.example;
+package org.example.thread;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;
 
 /*
-* Second Task Connecting to server and doing something running python script maybe?
+* Second Task Connecting to server and doing something running script could be also.
 *
  */
 public record SecondTask(int total) implements Callable<String> {

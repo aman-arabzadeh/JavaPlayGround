@@ -1,14 +1,14 @@
-package org.example;
+package org.example.thread;
 
 import java.util.concurrent.*;
 /*
-* Running the tasks async in background and returning the res after completion using a fixed thread pool of 2 threads
+* Running the tasks async in background and returning the res after completion
 */
 public class RunningThread {
     public static void main(String[] args) {
         try (ExecutorService executor = Executors.newFixedThreadPool(2)) {
 
-            CompletableFuture<String> firstTask = CompletableFuture.supplyAsync(
+            var firstTask = CompletableFuture.supplyAsync(
                     () -> {
                         try {
                             return new FirstTask(10).call();
@@ -19,7 +19,7 @@ public class RunningThread {
             );
 
 
-            CompletableFuture<String> secondTask = CompletableFuture.supplyAsync(
+            var secondTask = CompletableFuture.supplyAsync(
                     () -> {
                         try {
                             return new SecondTask(10).call();

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.color;
 /*
  Ansi escape code color and style
   https://en.wikipedia.org/wiki/ANSI_escape_code

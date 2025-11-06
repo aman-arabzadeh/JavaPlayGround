@@ -1,4 +1,4 @@
-package org.example;
+package org.example.thread;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.TimeUnit;

@@ -1,4 +1,7 @@
-package org.example;
+package org.example.color;
+
+import org.example.Person;
+
 /*
 *  Ansi Code Color Console pretty neat =)
 *  Check the enum file AnsiCode
@@ -40,6 +43,8 @@ public final class ConsoleColors {
                 AnsiCode.CYAN,
                 AnsiCode.ITALIC
         ));
+
+        String getLastName = new Person().getGetLastName();
 
     }
 }
